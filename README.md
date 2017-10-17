@@ -14,7 +14,7 @@ Run by mounting the cloned polybar repository and a build directory(any build di
 
 i.e. if docker image is as above (polybar-build-env) and the cloned polybar repo is in ~/gitrepos/polybar and you have a build dir also in home:
 
-    docker run -it --name polybar-build-env -v ~/gitrepos/polybar:/source -v ~/build:/build 
+    docker run -it --name polybar-build-env -v ~/gitrepos/polybar:/source -v ~/build:/build polybar-build-env
     mkdir /build/polybar
     cd /build/polybar
     cmake /source
