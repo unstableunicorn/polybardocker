@@ -23,7 +23,7 @@ i.e. if docker image is as above (polybar-build-env) and the cloned polybar repo
 After it has built you can go to your ~/build/polybar and run make install and it should install polybar
 
 
-# without docker (for the reddit thread)
+# Without docker (for the reddit thread)
 ## i3 already installed (or without i3 support)
 
 The following was required for docker:
@@ -49,7 +49,12 @@ Note this was taken from https://i3wm.org/docs/repositories.html
     sudo apt update && sudo apt install -y i3
 
 ## make polybar
-first get the repo and place it in a siotable place i.e. ~/gitrepos/<polybar>
+first get the repo and place it in a suitable place i.e. ~/gitrepos/<polybar> modified from readme at https://github.com/jaagr/polybar
+
+   mkdir -p ~/gitrepos
+   cd ~/gitrepos
+   git clone --branch 3.0.5 --recursive https://github.com/jaagr/polybar
+   
 create a build dir and make poly bar
 
     mkdir -p ~/build/polybar
