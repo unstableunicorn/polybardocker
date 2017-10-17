@@ -47,5 +47,15 @@ If you don't have i3 and would like it or want the latest with polybar support d
     sudo echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list \
     sudo apt update && sudo apt install -y i3
 
-drink beer
+## make polybar
+first get the repo and place it in a siotable place i.e. ~/gitrepos/<polybar>
+create a build dir and make poly bar
+
+    mkdir -p ~/build/polybar
+    cd ~/build/polybar
+    cmake ~/gitrepos/polybar/
+    make
+    sudo make install
+
+drink beer (hopefully as untested!)
 
